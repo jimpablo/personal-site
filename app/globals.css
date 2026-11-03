@@ -7,6 +7,8 @@
   --text-tertiary: #737373;
   --text-quaternary: #a3a3a3;
   --divider: #e5e5e5;
+  --selection-text: #0066db;
+  --selection-bg: rgba(0, 154, 250, 0.1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,6 +19,8 @@
     --text-tertiary: rgba(255, 255, 255, 0.5);
     --text-quaternary: rgba(255, 255, 255, 0.32);
     --divider: rgba(255, 255, 255, 0.12);
+    --selection-text: #ff6b01;
+    --selection-bg: rgba(240, 104, 0, 0.1);
   }
 }
 
@@ -41,4 +45,9 @@ body {
   background-color: var(--background);
   color: var(--text-primary);
   font-family: var(--font-sans);
+}
+
+::selection {
+  color: var(--selection-text);
+  background-color: var(--selection-bg);
 }
